@@ -2,7 +2,7 @@
 Simple python script to track your uptime on your computer and display it as a graph.
 
 # How to use (WINDOWS)
-Put the three python scripts in a single directory and make sure you have installed the dependency that is used (matplotlib)
+Put the three python scripts in a single directory and make sure you have installed matplotlib (to install it, run `pip install matplotlib` in a terminal)
 Open `Task Scheduler`, navigate to `Task Scheduler (Local) > Task Scheduler Library`, and right click on `Task Scheduler Library`. Click on `Create Task`
 Change the group from your user to `SYSTEM`
 
