@@ -1,9 +1,8 @@
 import re
-from datetime import datetime
 import time
+from datetime import datetime
 
 import matplotlib.pyplot as plt
-import numpy as np
 from matplotlib import axes
 from matplotlib import dates as mdates
 
