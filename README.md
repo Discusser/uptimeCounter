@@ -1,8 +1,9 @@
 # uptimeCounter
 Simple python script to track your uptime on your computer and display it as a graph.
 
-![image](https://user-images.githubusercontent.com/47938380/179482456-e7ad8ec8-f130-4a51-8bb8-fcbe2cfdf885.png)
+![image](https://user-images.githubusercontent.com/47938380/179495903-d5c8bafc-f62c-44ec-a5e3-e4df28d51453.png)
 
+<sup>Example of graph generated after turning the computer on and off multiple times</sup>
 
 # How to use (WINDOWS)
 Put the three python scripts in a single directory and make sure you have installed matplotlib (to install it, run `pip install matplotlib` in a terminal)
