@@ -61,8 +61,3 @@ plt.ylabel("Duration (hours)")
 plt.title("Uptime")
 plt.tight_layout()
 plt.show()
-
-
-
-
-
