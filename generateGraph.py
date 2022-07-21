@@ -33,7 +33,7 @@ if hasBounds:
     askUpperBound()
 
 with open(r"D:\Coding\Python\UptimeCounter\data.txt", 'r') as file:
-    for time1 in re.findall(r"\d{19}(?!;$)", file.read()):
+    for time1 in re.findall(r"\d{19}", file.read()):
         dates.append(int(time1) / 1_000_000_000)
         dt = datetime.fromtimestamp(int(time1) / 1_000_000_000)
         mplDates.append(dt)
@@ -46,9 +46,11 @@ if hasBounds:
 
 for i in range(0, len(dates), 2):
     for j in range(2):
-        durations.append((dates[i + 1] - dates[i]) / 3600)
+        try:
+            durations.append((dates[i + 1] - dates[i]) / 3600)
+        except IndexError:
+            pass
 
-mplDates.append(datetime.now())
 durations.append((time.time() - dates[-1]) / 3600)
 
 ax: axes.Axes
