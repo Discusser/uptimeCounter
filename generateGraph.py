@@ -38,10 +38,12 @@ with open(r"D:\Coding\Python\UptimeCounter\data.txt", 'r') as file:
         dt = datetime.fromtimestamp(int(time1) / 1_000_000_000)
         mplDates.append(dt)
 
-dateFrom1 = datetime.strptime(dateFrom, "%d/%m/%Y").timestamp()
-dateTo1 = (datetime.strptime(dateTo, "%d/%m/%Y") + timedelta(days=1)).timestamp()
+global dateTo1
 
 if hasBounds:
+    global dateTo1
+    dateFrom1 = datetime.strptime(dateFrom, "%d/%m/%Y").timestamp()
+    dateTo1 = (datetime.strptime(dateTo, "%d/%m/%Y") + timedelta(days=1)).timestamp()
     datesCopy = dates
     dates = [date for date in dates if dateFrom1 <= date <= dateTo1]
     # Check if first and last elements of array are shutdown times
@@ -58,7 +60,7 @@ for i in range(0, len(dates), 2):
         except IndexError:
             pass
 
-durations.append((time.time() if not hasBounds else dateTo1 - dates[-1]) / 3600)
+durations.append(((time.time() if not hasBounds else dateTo1) - dates[-1]) / 3600)
 
 ax: axes.Axes
 fig, ax = plt.subplots()
