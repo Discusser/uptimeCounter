@@ -1,7 +1,7 @@
 # uptimeCounter
 Simple python script to track your uptime on your computer and display it as a graph.
 
-![image](https://user-images.githubusercontent.com/47938380/179495903-d5c8bafc-f62c-44ec-a5e3-e4df28d51453.png)
+![image](https://user-images.githubusercontent.com/47938380/180170969-0ee6b490-e80c-464c-b928-9b764620f156.png)
 
 <sup>Example of graph generated after turning the computer on and off multiple times</sup>
 
