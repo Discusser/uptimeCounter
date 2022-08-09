@@ -1,4 +1,7 @@
+# !! Discontinued due to instability (shutdown not being detected sometimes)
+
 # uptimeCounter
+
 Simple python script to track your uptime on your computer and display it as a graph.
 
 ![image](https://user-images.githubusercontent.com/47938380/180170969-0ee6b490-e80c-464c-b928-9b764620f156.png)
