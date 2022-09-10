@@ -1,4 +1,6 @@
-# !! Discontinued due to instability (shutdown not being detected sometimes)
+# !! Discontinued due to unreliability
+
+If the computer turns off unexpectedly, the shut down will not be detected. I won't update this for now unless someone actually wants to use this.
 
 # uptimeCounter
 
